@@ -4,6 +4,11 @@
 <head>
     <title>Contact</title>
     <link rel="stylesheet" href="css/contact.css">
+    <script src="js/contact.js"></script>
+    <link rel="stylesheet" href="vendor/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <script src="vendor/bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/daec1ed365.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -12,27 +17,38 @@
         <div class="entry-container">
             <div class="entry">
                 <div class="icon-container">
-                    <object type="image/svg+xml" data="assets/phone.svg" class="icon"></object>
+                    <i class="fa fa-phone icon" aria-hidden="true"></i>
                 </div>
                 <span>Phone:</span>
                 <a href="tel:0040726728831">(0040) 726 728 831</a>
             </div>
             <div class="entry">
                 <div class="icon-container">
-                    <object type="image/svg+xml" data="assets/mail.svg" class="icon" style="margin-right: 5px"></object>
+                    <i class="fa fa-envelope icon" aria-hidden="true"></i>
                 </div>
                 <span>Email:</span>
                 <a href="mailto:biiancaiorga@yahoo.com"> Bianca Iorga</a>
             </div>
             <div class="entry">
                 <div class="icon-container">
-                    <object type="image/svg+xml" data="assets/location.svg" class="icon"></object>
+                    <i class="fa fa-map-marker icon" aria-hidden="true"></i>
                 </div>
                 <span>Address:</span>
                 <span>1234 Main Street, New York, NY 10001</span>
             </div>
         </div>
-        <h1>Contactează-ne</h1>
+
+        <br><br>
+        <h1>Formular de contact</h1>
+        <div class="contactor">
+            <input id="Nume" name="Nume" class="input-field" placeholder="Nume" /><br><br>
+            <input id="Prenume" type="text" class="input-field" placeholder="Prenume" /><br><br>
+            <input id="Email" type="text" class="input-field" placeholder="Email" /><br><br>
+            <input id="Subiect" type="text" class="input-field" placeholder="Subiect" /><br><br>
+            <textarea id="Mesaj" type="text" class="input-field" placeholder="Mesaj" cols="50"
+                rows="8"></textarea><br><br>
+            <button type="button" class="btn btn-dark button" onclick="myFunction()">TRIMITE</button>
+        </div>
     </div>
 </body>
 
