@@ -54,6 +54,8 @@ h1:last-child {
 .input-field {
     width: calc(100% - 8px);
     height: 40px;
+    background-color: rgba(255, 255, 255, 0.04);
+    color: #e37218;
 }
 
 textarea.input-field {
