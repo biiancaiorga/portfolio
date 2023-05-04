@@ -12,22 +12,48 @@
 </head>
 
 <body>
+    <nav class="navigation navbar fixed-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark"
+        style="position: fixed;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="about.html">About</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
     <div class="container">
-        <h1>Contact</h1>
+        <h1 style="margin: 70px auto 20px;">Contact</h1>
         <div class="entry-container">
             <div class="entry">
                 <div class="icon-container">
                     <i class="fa fa-phone icon" aria-hidden="true"></i>
                 </div>
                 <span>Phone:</span>
-                <a href="tel:0040726728831">(0040) 726 728 831</a>
+                <a href="tel:0040726728831" style="color: #e37218">(0040) 726 728 831</a>
             </div>
             <div class="entry">
                 <div class="icon-container">
                     <i class="fa fa-envelope icon" aria-hidden="true"></i>
                 </div>
                 <span>Email:</span>
-                <a href="mailto:biiancaiorga@yahoo.com"> Bianca Iorga</a>
+                <a href="mailto:biiancaiorga@yahoo.com" style="color: #e37218"> Bianca Iorga</a>
             </div>
             <div class="entry">
                 <div class="icon-container">
@@ -41,13 +67,15 @@
         <br><br>
         <h1>Formular de contact</h1>
         <div class="contactor">
-            <input id="Nume" name="Nume" class="input-field" placeholder="Nume" /><br><br>
+            <input id="Nume" name="Nume" class="input-field" placeholder="Nume"
+                style="background-color: rgba(255, 255, 255, 0.04)" /><br><br>
             <input id="Prenume" type="text" class="input-field" placeholder="Prenume" /><br><br>
             <input id="Email" type="text" class="input-field" placeholder="Email" /><br><br>
             <input id="Subiect" type="text" class="input-field" placeholder="Subiect" /><br><br>
             <textarea id="Mesaj" type="text" class="input-field" placeholder="Mesaj" cols="50"
                 rows="8"></textarea><br><br>
-            <button type="button" class="btn btn-dark button" onclick="myFunction()">TRIMITE</button>
+            <button type="button" class="btn btn-dark button" onclick="myFunction()"
+                style="background-color: #e37218;">TRIMITE</button>
         </div>
     </div>
 </body>
