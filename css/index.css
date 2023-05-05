@@ -1,0 +1,46 @@
+body {
+    background-color: #1a1a1a !important;
+}
+
+.titlu {
+    text-align: left;
+    margin-left: 40px;
+}
+
+.row>* {
+    width: unset !important;
+}
+
+.container {
+
+    width: 100%;
+    max-width: unset !important;
+}
+
+.first-row {
+    background-color: white;
+}
+
+.content {
+    color: #686868;
+    width: 800px;
+    font-size: 19px;
+    margin-left: 60px;
+}
+
+.module {
+    color: #ccc;
+    width: 800px;
+    font-size: 19px;
+    margin-left: 60px;
+
+}
+
+h2 {
+    color: #ffffff !important;
+}
+
+.module-content-cols {
+    color: #ccc;
+    margin-left: 60px;
+}
