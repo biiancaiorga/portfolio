@@ -1,4 +1,4 @@
-function myFunction() {
+function myFunction(event) {
     const nameInput = document.getElementById('name');
     const nameErrorMessage = document.getElementById('name-error-message');
     const surnameInput = document.getElementById('surname');
@@ -8,10 +8,12 @@ function myFunction() {
     const messageInput = document.getElementById('message');
     const messageErrorMessage = document.getElementById('message-error-message');
     const submitButton = document.getElementById('submit-button');
+    submitButton.addEventListener('click', myFunction);
 
+    let isValid = true;
 
     submitButton.addEventListener('click', function (event) {
-        let isValid = true;
+
         if (!/^[a-zA-Z]+$/.test(nameInput.value)) {
             nameErrorMessage.style.display = 'block';
             isValid = false;
@@ -35,10 +37,12 @@ function myFunction() {
         } else {
             messageErrorMessage.style.display = 'none';
         }
+        if (isValid) {
+            event.preventDefault();
+            alert("Mesajul a fost trimis!");
+        }
+
     });
-    // alert("Mesajul a fost trimis!");
-    if (isValid) {
-        Event.preventDefault();
-        alert("Mesajul a fost trimis!");
-    }
+
+
 }
