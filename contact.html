@@ -62,14 +62,34 @@
         <br><br>
         <h1>Formular de contact</h1>
         <div class="contactor">
-            <input id="Nume" name="Nume" class="input-field" placeholder="Nume"
-                style="background-color: rgba(255, 255, 255, 0.04)" /><br><br>
-            <input id="Prenume" type="text" class="input-field" placeholder="Prenume" /><br><br>
-            <input id="Email" type="text" class="input-field" placeholder="Email" /><br><br>
-            <input id="Subiect" type="text" class="input-field" placeholder="Subiect" /><br><br>
-            <textarea id="Mesaj" type="text" class="input-field" placeholder="Mesaj" cols="50"
-                rows="8"></textarea><br><br>
-            <button type="button" class="btn btn-dark button" onclick="myFunction()"
+            <div class="Nume">
+                <input id="name" type="text" class="input-field" name="Nume" class="input-field" placeholder="Nume"
+                    style="background-color: rgba(255, 255, 255, 0.04);" required />
+                <span id="name-error-message" style="color:red; display:none;">Please enter only letters.</span>
+            </div><br>
+
+            <div class="Prenume">
+                <input id="surname" type="text" class="input-field" name="Prenume" class="input-field"
+                    placeholder="Prenume" style="background-color: rgba(255, 255, 255, 0.04);" required />
+                <span id="surname-error-message" style="color:red; display:none;">Please enter only letters.</span>
+            </div><br>
+
+            <div class="Email">
+                <input id="email" type="email" class="input-field" placeholder="Email" required />
+                <span id="email-error-message" style="color:red; display:none">Please enter a valid email
+                    address.</span>
+            </div><br>
+
+            <input id="Subiect" type="text" class="input-field" placeholder="Subiect" required><br><br>
+
+            <div class="Mesaj">
+                <textarea id="message" type="text" class="input-field" placeholder="Mesaj" cols="50"
+                    rows="8"></textarea>
+                <span id="message-error-message" style="color:red; display:none;">Please enter no more than 500
+                    characters.</span>
+            </div><br>
+
+            <button id="submit-button" type="button submit" class="btn btn-dark button" onclick="myFunction()"
                 style="background-color: #e37218;">TRIMITE</button>
         </div>
     </div>
