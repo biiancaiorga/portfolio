@@ -7,42 +7,32 @@ function myFunction(event) {
     const emailErrorMessage = document.getElementById('email-error-message');
     const messageInput = document.getElementById('message');
     const messageErrorMessage = document.getElementById('message-error-message');
-    const submitButton = document.getElementById('submit-button');
-    submitButton.addEventListener('click', myFunction);
 
     let isValid = true;
-
-    submitButton.addEventListener('click', function (event) {
-
-        if (!/^[a-zA-Z]+$/.test(nameInput.value)) {
-            nameErrorMessage.style.display = 'block';
-            isValid = false;
-        } else {
-            nameErrorMessage.style.display = 'none';
-        } if (!/^[a-zA-Z]+$/.test(surnameInput.value)) {
-            surnameErrorMessage.style.display = 'block';
-            isValid = false;
-        } else {
-            surnameErrorMessage.style.display = 'none';
-        }
-        if (!/^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/.test(emailInput.value)) {
-            emailErrorMessage.style.display = 'block';
-            isValid = false;
-        } else {
-            emailErrorMessage.style.display = 'none';
-        }
-        if (messageInput.value.length > 500) {
-            messageErrorMessage.style.display = 'block';
-            isValid = false;
-        } else {
-            messageErrorMessage.style.display = 'none';
-        }
-        if (isValid) {
-            event.preventDefault();
-            alert("Mesajul a fost trimis!");
-        }
-
-    });
-
-
+    if (!/^[a-zA-Z]+$/.test(nameInput.value)) {
+        nameErrorMessage.style.display = 'block';
+        isValid = false;
+    } else {
+        nameErrorMessage.style.display = 'none';
+    } if (!/^[a-zA-Z]+$/.test(surnameInput.value)) {
+        surnameErrorMessage.style.display = 'block';
+        isValid = false;
+    } else {
+        surnameErrorMessage.style.display = 'none';
+    }
+    if (!/^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/.test(emailInput.value)) {
+        emailErrorMessage.style.display = 'block';
+        isValid = false;
+    } else {
+        emailErrorMessage.style.display = 'none';
+    }
+    if (messageInput.value.length > 500) {
+        messageErrorMessage.style.display = 'block';
+        isValid = false;
+    } else {
+        messageErrorMessage.style.display = 'none';
+    }
+    if (isValid) {
+        alert("Mesajul a fost trimis!");
+    }
 }
