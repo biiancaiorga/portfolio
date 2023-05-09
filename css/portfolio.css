@@ -1,0 +1,25 @@
+body {
+    background-color: #1a1a1a !important;
+}
+
+.titlu {
+    font-size: 60px;
+    font-weight: 700;
+    width: 300px;
+    margin: 100px 20px 50px;
+    color: #e37218;
+    text-align: left;
+}
+
+.all-content {
+    color: #ccc !important;
+    text-align: left;
+    width: 500px;
+    font-size: large;
+}
+
+.imag {
+    width: 80%;
+    margin: -140px 40px 50px;
+    max-width: 100%;
+}
